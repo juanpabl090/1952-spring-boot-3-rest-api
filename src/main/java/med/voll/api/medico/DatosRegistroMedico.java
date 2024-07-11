@@ -8,7 +8,6 @@ import jakarta.validation.constraints.Pattern;
 import med.voll.api.direccion.DatosDireccion;
 
 public record DatosRegistroMedico(
-
         @NotBlank
         String nombre,
         @NotBlank
@@ -23,5 +22,5 @@ public record DatosRegistroMedico(
         Especialidad especialidad,
         @NotNull
         @Valid
-        DatosDireccion direccion) {
-}
+        DatosDireccion direccion
+) {}
